@@ -1,0 +1,181 @@
+<html>
+<head>
+<script>
+function checkAnswer() {
+     let answer = "'"+ document.querySelector("input").value  +"'";
+     for (let node of document.querySelectorAll("td")) {
+     if (node.className.indexOf(answer) >= 0) {
+     node.style = "color: black;";
+}	
+}
+     document.querySelector("input").value = "";
+}
+</script>
+<style>
+td{
+border:1px solid black;
+width:40px;
+height:40px;
+text-align: center;
+color:white;
+}
+td:empty{
+background:black;
+}
+sup{
+color:black;
+position: absolute;
+}
+</style>
+</head>
+<body>
+<body background="background white.png" height="2000">
+<font size="5"><font face="Helvetica"><h1>Kieran Jays Crossword</h1>
+</font>
+<table>
+<tr>
+<td class="'WATERFALL'"><sup>1</sup>W</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="'WATERFALL' 'ASTRAL'"><sup>2</sup>A</td>
+<td class="'ASTRAL'">S</td>
+<td class="'ASTRAL'">T</td>
+<td class="'ASTRAL'">R</td>
+<td class="'ASTRAL'">A</td>
+<td class="'ASTRAL' 'LEGEND'"><sup>3</sup>L</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="'WATERFALL'">T</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td class="'LEGEND'">E</td>
+<td></td>
+<td></td>
+<td class="'BORN'"><sup>6</sup>B</td>
+</tr>
+<tr>
+<td class="'WATERFALL'">E</td>
+<td></td>
+<td></td>
+<td class="'SIESTA'"><sup>8</sup>S</td>
+<td></td>
+<td class="'LEGEND'">G</td>
+<td></td>
+<td></td>
+<td class="'BORN'">O</td>
+</tr>
+<tr>
+<td class="'WATERFALL'">R</td>
+<td></td>
+<td></td>
+<td class="'SIESTA'">I</td>
+<td></td>
+<td class="'LEGEND'">E</td>
+<td></td>
+<td></td>
+<td class="'BORN'">R</td>
+</tr>
+<tr>
+<td class="'WATERFALL'">F</td>
+<td></td>
+<td></td>
+<td class="'SIESTA'">E</td>
+<td></td>
+<td class="'LEGEND' 'NEON'"><sup>4</sup>N</td>
+<td class="'NEON'">E</td>
+<td class="'NEON' 'ORCA'"><sup>5</sup>O</td>
+<td class="'NEON' 'BORN'">N</td>
+</tr>
+<tr>
+<td class="'WATERFALL'">A</td>
+<td></td>
+<td></td>
+<td class="'SIESTA'">S</td>
+<td></td>
+<td class="'LEGEND'">D</td>
+<td></td>
+<td class="'ORCA'">R</td>
+<td></td>
+</tr>
+<tr>
+<td class="'WATERFALL'">L</td>
+<td></td>
+<td></td>
+<td class="'SIESTA'">T</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="'ORCA'">C</td>
+<td></td>
+</tr>
+<tr>
+<td class="'WATERFALL'">L</td>
+<td></td>
+<td></td>
+<td class="'ARENA' 'SIESTA'"><sup>7</sup>A</td>
+<td class="'ARENA'">R</td>
+<td class="'ARENA'">E</td>
+<td class="'ARENA'">N</td>
+<td class="'ORCA' 'ARENA'">A</td>
+<td></td>
+</tr>
+</table>
+<h2>Instructions</h2>
+<ol>
+<li>
+You must type your answers in capital letters only.
+</li>
+<li>
+You must follow the numbers step by step to finish the crossword puzzle little by little.
+</li>
+<li>
+The blank rectangle box that you can see below is used to solve the cross word puzzle.
+</li>
+</ol>
+<h2>Clues</h2>
+<ol>
+<li>
+A stream of water that falls from a higher area to a lower one.
+</li>
+<li>
+Of connected with, or resembling the stars.
+</li>
+<li>
+A traditional story sometimes popularly regarded as historical but unauthenticated.
+</li>
+<li>
+The chemical element of atomic number 10, an inert gaseous element of the noble gas group.<br> It is obtained by the distillation of liquid air and is used in fluorescent lamps and advertising signs.
+</li>
+<li>
+A large toothed whale with distinctive black-and-white markings and a prominent dorsal fin. It lives<br> in groups that cooperatively hunt fish, seals, and penguins.
+</li>
+<li>
+Existing as a result of birth.
+</li>
+<li>
+A level area surrounded by seats for spectators, in which sports, entertainments, and other public events are held.
+</li>
+<li>
+An afternoon rest or nap, especially one taken during the hottest hours of the day in a hot climate.
+</li>
+</ol>
+<embed src="goodluck.gif" weight="300" height="300">
+<p>This is where you should put your answers:</p><form onsubmit="javascript:checkAnswer()" action="javascript:null">
+<input></input>
+</form>
+</html>
+</body>
+</head>
